@@ -1,0 +1,221 @@
+a/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    color: #333;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark {
+    background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(0, 0, 0, 0.9) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #ff6b35;
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.location-info {
+    font-size: 0.9rem;
+}
+
+.search-form .form-control {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-form .btn-warning {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.search-form .btn-warning:hover {
+    transform: scale(1.05);
+}
+
+.cart-link, .user-link {
+    transition: color 0.3s ease;
+}
+
+.cart-link:hover, .user-link:hover {
+    color: #ff6b35 !important;
+}
+
+.dark-mode-btn {
+    transition: background 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background: #ff6b35;
+}
+
+/* Sale Bar */
+.sale-bar {
+    background: linear-gradient(90deg, #ff6b35, #f7931e);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('Lebron.png') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    margin-bottom: 2rem;
+}
+
+.hero-btn {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    border: none;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Main Content */
+.slogan h2 {
+    font-weight: 700;
+    color: #ff6b35;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.slogan p {
+    font-size: 1.1rem;
+}
+
+.section-title {
+    color: #333;
+    font-weight: 600;
+    border-bottom: 3px solid #ff6b35;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.product-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.zoom {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.05);
+}
+
+.see-more-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.see-more-link:hover {
+    color: #e55a2b;
+}
+
+/* Footer */
+.back-to-top a:hover {
+    color: #ff6b35 !important;
+}
+
+.footer-heading {
+    color: #ff6b35;
+}
+
+.social-icons a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    color: #ff6b35 !important;
+}
+
+.copyright {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Modal */
+.modal-custom {
+    border-radius: 10px;
+}

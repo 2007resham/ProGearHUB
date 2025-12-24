@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProGearHUB</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Google Fonts for Modern Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/x-icon" href="Logo.png">
+  <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="main.html">
+      <img src="Logo.png" alt="Logo" height="40">
+    </a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <div class="text-white me-4 location-info">
+        <p class="mb-0 small">Deliver to</p>
+        <i class="fa-solid fa-location-dot"></i> India
+      </div>
+
+      <form class="d-flex flex-grow-1 mx-3 search-form">
+        <input type="text" class="form-control me-2 rounded-pill" placeholder="search ProGearHUB">
+        <button class="btn btn-warning rounded-pill px-4">search</button>
+      </form>
+
+      <a href="#" class="nav-link text-white me-3 cart-link">
+        <i class="fa-solid fa-cart-shopping"></i> My Cart
+      </a>
+
+      <a href="signin.html" class="nav-link text-white user-link">
+        <i class="fa-solid fa-user"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- PRODUCTS -->
+<section class="products container my-5">
+  <h2 class="text-center mb-4 section-title">Our Collection</h2>
+
+  <div class="row g-4 justify-content-center product-grid">
+    <!-- Product 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card text-center p-3 h-100">
+        <img src="weightlifting-gloves.png" alt="Weightlifting Gloves" class="img-fluid mb-3 product-img">
+        <h3 class="product-title">Weightlifting Gloves</h3>
+        <p class="product-price">₹799</p>
+        <button class="btn btn-dark w-100 rounded-pill add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card text-center p-3 h-100">
+        <img src="lifting-belt.png" alt="Lifting Belt" class="img-fluid mb-3 product-img">
+        <h3 class="product-title">Lifting Belt</h3>
+        <p class="product-price">₹1499</p>
+        <button class="btn btn-dark w-100 rounded-pill add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="product-card text-center p-3 h-100">
+        <img src="yoga-mat.png" alt="Yoga Mat" class="img-fluid mb-3 product-img">
+        <h3 class="product-title">Yoga Mat</h3>
+        <p class="product-price">₹999</p>
+        <button class="btn btn-dark w-100 rounded-pill add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white mt-5">
+  <div class="text-center py-3 border-bottom back-to-top">
+    <a href="#top" class="text-white text-decoration-none fw-semibold">
+      Back To Top
+    </a>
+  </div>
+
+  <div class="container py-5">
+    <div class="row text-center text-md-start">
+      <div class="col-md-4 mb-4">
+        <p class="fw-bold footer-heading">Need Help?</p>
+        <p class="footer-links">
+          Help Center<br>
+          Size Guide<br>
+          Shipping & Delivery<br>
+          Returns & Exchanges<br>
+          Store Locator<br>
+          Order Tracking<br>
+          Gift Cards<br>
+          Sitemap<br>
+          Student Discount
+        </p>
+      </div>
+
+      <div class="col-md-4 mb-4 text-center">
+        <img src="Logo.png" alt="logo" height="60" class="mb-3 footer-logo">
+        <div class="d-flex justify-content-center gap-4 fs-4 social-icons">
+          <a href="https://www.instagram.com/" target="_blank" class="text-white">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.gmail.com/" target="_blank" class="text-white">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="http://127.0.0.1:3000/HTML/ProGearHub/main.html" target="_blank" class="text-white">
+            <i class="fa-brands fa-chrome"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <p class="fw-bold footer-heading">About ProGearHUB</p>
+        <p class="footer-links">
+          Affiliates<br>
+          About Us/Our Story<br>
+          Careers<br>
+          Investor Relations<br>
+          Product Recalls<br>
+          Corporate Sales<br>
+          Do Not Sell or Share My Personal Information<br>
+          Innovation Idea House
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center py-3 border-top copyright">
+    &copy; 2025 ProGearHUB. All Rights Reserved.
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

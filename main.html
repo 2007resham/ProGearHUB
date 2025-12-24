@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProGearHUB</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- Google Fonts for Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body id="page">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black sticky-top shadow-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="main.html">
+            <img src="Logo.png" height="40" alt="ProGearHUB Logo">
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <div class="text-white me-4 location-info">
+                <p class="mb-0 small">Deliver to</p>
+                <i class="fa-solid fa-location-dot"></i> India
+            </div>
+
+            <form class="d-flex flex-grow-1 mx-3 search-form">
+                <input class="form-control me-2 rounded-pill" placeholder="search ProGearHUB">
+                <button class="btn btn-warning rounded-pill px-4">search</button>
+            </form>
+
+            <a href="#" class="nav-link text-white me-3 cart-link">
+                <i class="fa-solid fa-cart-shopping"></i> My Cart
+            </a>
+
+            <a href="#" class="nav-link text-white user-link" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <!-- DARK MODE -->
+            <button class="btn btn-outline-light ms-3 rounded-pill dark-mode-btn" onclick="toggleMode()">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- SALE -->
+<div class="sale-bar">
+    New Styles On Sale: Upto 35% Off
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="hero-overlay">
+        <div class="container h-100 d-flex align-items-center justify-content-center text-center">
+            <div class="hero-content">
+                <h1 class="hero-title">Strength Meets Style</h1>
+                <p class="hero-subtitle">Fresh Gear. Fierce Energy.</p>
+                <a href="#main" class="btn btn-warning btn-lg rounded-pill mt-3 hero-btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main id="main" class="container my-5">
+    <div class="text-center slogan mb-5">
+        <h2>STRENGTH MEETS STYLE</h2>
+        <p>Fresh Gear. Fierce Energy. Be the First to Drop In.</p>
+        <p class="fw-bold">Shop Now!</p>
+    </div>
+
+    <h3 class="mb-4 section-title">New Arrivals....</h3>
+
+    <div class="row g-4">
+        <!-- ACTIVEWEAR -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="Activewear.png" alt="Activewear" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Activewear :</h5>
+                    <a href="activewear.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPRESSION -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="CompressionWear.png" alt="Compression Wear" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Compression Wear :</h5>
+                    <a href="Compressionwear.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMAGE BOXES -->
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="Box_3.png" alt="Bags & Accessories" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Bags & Accessories :</h5>
+                    <a href="accessories.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="Box_4.png" alt="Gym Gear" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Gym Gear :</h5>
+                    <a href="gymgear.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="Box_5.png" alt="Footwear" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Footwear :</h5>
+                    <a href="Footwear.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3">
+            <div class="card product-card h-100 zoom">
+                <img src="Box_6.png" alt="Specialized Sports Gear" class="card-img-top product-img">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Specialized Sports Gear :</h5>
+                    <a href="Specialized-Sports-Gear.html" class="see-more-link">see more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-black text-white mt-5">
+    <!-- BACK TO TOP -->
+    <div class="text-center py-3 border-bottom back-to-top">
+        <a href="#page" class="text-white text-decoration-none fw-semibold">
+            Back To Top
+        </a>
+    </div>
+
+    <!-- FOOTER CONTENT -->
+    <div class="container py-5">
+        <div class="row text-center text-md-start">
+            <!-- NEED HELP -->
+            <div class="col-md-4 mb-4">
+                <p class="fw-bold footer-heading">Need Help?</p>
+                <p class="footer-links">
+                    Help Center<br>
+                    Size Guide<br>
+                    Shipping & Delivery<br>
+                    Returns & Exchanges<br>
+                    Store Locator<br>
+                    Order Tracking<br>
+                    Gift Cards<br>
+                    Sitemap<br>
+                    Student Discount
+                </p>
+            </div>
+
+            <!-- LOGO & ICONS -->
+            <div class="col-md-4 mb-4 text-center">
+                <img src="Logo.png" alt="ProGearHUB Logo" height="60" class="mb-3 footer-logo">
+                <div class="d-flex justify-content-center gap-4 fs-4 social-icons">
+                    <a href="https://www.instagram.com/resham._.singh001/" target="_blank" class="text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="mailto:2007resham@gmail.com" target="_blank" class="text-white">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <a href="C:\Users\Resham Singh\OneDrive\Documents\codes\HTML\2510992805_html\main.html" target="_blank" class="text-white">
+                        <i class="fa-brands fa-chrome"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <div class="col-md-4 mb-4">
+                <p class="fw-bold footer-heading">About ProGearHUB</p>
+                <p class="footer-links">
+                    Affiliates<br>
+                    About Us/Our Story<br>
+                    Careers<br>
+                    Investor Relations<br>
+                    Product Recalls<br>
+                    Corporate Sales<br>
+                    Do Not Sell or Share My Personal Information<br>
+                    Innovation Idea House
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="text-center py-3 border-top copyright">
+        &copy; 2025 ProGearHUB. All Rights Reserved.
+    </div>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content modal-custom">
+            <div class="modal-header">
+                <h5 class="modal-title">Sign In</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <input class="form-control mb-3 rounded-pill" placeholder="Email">
+                <input class="form-control rounded-pill" placeholder="Password" type="password">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-dark w-100 rounded-pill">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function toggleMode(){
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
