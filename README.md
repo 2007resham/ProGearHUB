@@ -1,4 +1,4 @@
 # ProGearHUB
-A Sports Equipment Website. working on Java script
+A Sports Equipment Website.
 <br>
 Author :- Resham Singh
